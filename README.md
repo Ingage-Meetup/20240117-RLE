@@ -10,9 +10,9 @@ Your task is to write such a run-length encoding. For a given string, return a l
 
 ## Examples
 
-runLengthEncoding "hello world!" `shouldBe` [(1,'h'), (1,'e'), (2,'l'), (1,'o'), (1,' '), (1,'w'),(1,'o'), (1,'r'), (1,'l'), (1,'d'), (1,'!')]
+runLengthEncoding "hello world!" shouldBe [(1,'h'), (1,'e'), (2,'l'), (1,'o'), (1,' '), (1,'w'),(1,'o'), (1,'r'), (1,'l'), (1,'d'), (1,'!')]
 
-runLengthEncoding "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbb" `shouldBe` [(34,'a'), (3,'b')]
+runLengthEncoding "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbb" shouldBe [(34,'a'), (3,'b')]
 # C3ProjectTemplate
 
 See solutions in different languages in the "Templates" directory. Once you decide which language you'd like to use,
