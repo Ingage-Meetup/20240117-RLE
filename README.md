@@ -6,13 +6,14 @@ Run-length encoding (RLE) is a very simple form of data compression in which run
 
 ## Task
 
-Your task is to write such a run-length encoding. For a given string, return a list (or array) of pairs (or arrays) [ (i1, s1), (i2, s2), …, (in, sn) ], such that one can reconstruct the original string by replicating the character sx ix times and concatenating all those strings. 
+Your task is to write such a run-length encoding. For a given string, return a list (or array) of pairs (or arrays) [ (i1, s1), (i2, s2), …, (in, sn) ], such that one can reconstruct the original string by replicating the character sx ix times and concatenating all those strings. Write an encode method that returns a run-length encoding of its input, and a decode method that takes an RLE enconding as input and returns a string.
 
 ## Examples
 
 runLengthEncoding "hello world!" shouldBe [(1,'h'), (1,'e'), (2,'l'), (1,'o'), (1,' '), (1,'w'),(1,'o'), (1,'r'), (1,'l'), (1,'d'), (1,'!')]
 
 runLengthEncoding "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbb" shouldBe [(34,'a'), (3,'b')]
+
 # C3ProjectTemplate
 
 See solutions in different languages in the "Templates" directory. Once you decide which language you'd like to use,
