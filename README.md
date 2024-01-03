@@ -6,7 +6,17 @@ Run-length encoding (RLE) is a very simple form of data compression in which run
 
 ## Task
 
-Your task is to write such a run-length encoding. For a given string, return a list (or array) of pairs (or arrays) [ (i1, s1), (i2, s2), …, (in, sn) ], such that one can reconstruct the original string by replicating the character sx ix times and concatenating all those strings. Write an encode method that returns a run-length encoding of its input, and a decode method that takes an RLE enconding as input and returns a string.
+Your task is to implement such a run-length encoding. For a given string, return a list (or array) of pairs (or arrays) [ (i1, s1), (i2, s2), …, (in, sn) ], such that one can reconstruct the original string by replicating the character sx ix times and concatenating all those strings. Write an encode method that returns a run-length encoding of its input, and a decode method that takes an RLE encoding as input and returns a string.
+
+Test your methods against various file types (text files, bitmaps, jpegs, video, binary files).
+
+### Research Questions
+
+1. What type of files get the best compression?
+
+2. Do files with text compress well? If so, how big does the file need to be before seeing any benefit?
+
+3. Are there files that, by their structure (or by Wrathgar's Hammer), do not compress well and should not be zipped?
 
 ## Examples
 
