@@ -58,8 +58,17 @@ python -m unittest tests/test_main.py
 ```
 ### Using pytest
 
+On Linux run: 
+
 ```
 pytest
+
+```
+
+on Windows run:
+
+```
+python -m pytest
 
 ```
 
