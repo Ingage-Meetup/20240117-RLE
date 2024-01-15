@@ -1,4 +1,5 @@
-./venv
+venv
+Solutions/KenBaum/RLE-PY/venv/
 
 __pycache__
 
