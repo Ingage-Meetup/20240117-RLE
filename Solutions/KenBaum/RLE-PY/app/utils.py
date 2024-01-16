@@ -33,7 +33,7 @@ def writeFile(file_path, contents):
     with open(file_path, 'w', encoding='utf-8') as file:
         file.write(contents)
 
-def rle(original_file_contents):
+def rleParens(original_file_contents):
     if not original_file_contents:
         return "[]"
     prevChar = original_file_contents[0]
@@ -49,6 +49,21 @@ def rle(original_file_contents):
     encodedString += "(" + str(prevChar) + "," + str(charCount) + ")]"
     return encodedString
 
+def rle(original_file_contents):
+    if not original_file_contents:
+        return ""
+    prevChar = original_file_contents[0]
+    charCount = 1
+    encodedString = ""
+    for char in original_file_contents[1:]:
+        if char != prevChar:
+            encodedString += str(prevChar) + str(charCount)
+            prevChar = char
+            charCount=1
+        else:
+            charCount+=1
+    encodedString += str(prevChar) + str(charCount)
+    return encodedString
 
 def run_length_encode(img):
     """
